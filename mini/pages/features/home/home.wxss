@@ -1,0 +1,73 @@
+/* pages/features/home/home.wxss */
+.card-body{
+  margin-top:30rpx;
+}
+.f_icon{
+  color: #3498db !important;
+  font-weight: 500;
+  font-size: 80rpx!important;
+  display: block;
+  margin-bottom: 30rpx!important;
+  margin-top:40rpx!important;
+}
+.f_name{
+  color: #000000 !important;
+  opacity: .5;
+  font-weight: 600;
+  font-size: 30rpx!important;
+}
+.card-title{
+padding: 40rpx 0rpx 0rpx 40rpx;
+}
+.weather-title{
+  height: 20rpx;
+  display: block;
+  margin: 10rpx 0rpx 0rpx 20rpx;
+  font-size: 30rpx;
+  font-weight: 700;
+}
+.titleicon{
+  color: white;
+  font-size: 50rpx;
+  display: block;
+  margin: 8rpx 0rpx 0rpx 10rpx;
+}
+.titleicon_bg{
+  width: 70rpx!important;
+  height: 70rpx;
+  border-radius: 50%;
+}
+.features_card_absolute{
+  box-shadow:2px 2px 20px rgba(161, 161, 161, 0.7);
+  position: absolute;
+  margin-left: 4vw;
+  margin-right: 4vw;
+  width: 92vw;
+  top:300rpx;
+  z-index: 2;
+  background-color: white;
+}
+.title_container{
+  margin:100rpx 0rpx 0rpx 80rpx;
+}
+.pagetitle{
+  display: block;
+  margin-left:10rpx;
+  color: white;
+  font-size: 2.0em;
+  font-weight: 700;
+  opacity: .8;
+  font-family: 'Montserrat';
+}
+.relative_container{
+  position: relative;
+}
+.herobg{
+  position: absolute;
+  top:0;
+  left: 0;
+  height: 400rpx;
+  background-color: #3498db;
+  width: 100vw;
+  z-index:1;
+}

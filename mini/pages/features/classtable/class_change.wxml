@@ -1,0 +1,78 @@
+<!--pages/features/classtable/class_change.wxml-->
+<navigator open-type="navigateBack">
+<view class='titleBar'>
+
+<text class="cuIcon-back feature_page_back"></text>
+<text class="feature_page_title">换课</text>
+
+</view>
+</navigator>
+<view class="features_card">
+  <form>
+  <view  class="form_class">
+  <view class="cu-form-group">
+		<view class="title">换课类型</view>
+		<picker bindchange="TypeChange" value="{{index}}" range="{{type}}">
+			<view class="picker">
+				{{typeindex?type[typeindex]:'请选择'}}
+			</view>
+		</picker>
+	</view>
+
+<view wx:if="{{typeindex==0}}" class="cu-form-group">
+		<view class="title">换课日期1</view>
+		<picker mode="date" value="{{date1}}" start="2015-09-01" end="2020-09-01" bindchange="DateChange1">
+			<view class="picker">
+				{{date1}}
+			</view>
+		</picker>
+	</view>
+
+<view wx:if="{{typeindex==1}}" class="cu-form-group">
+		<view class="title">换课星期1</view>
+			<picker bindchange="WeekChange1" value="{{index}}" range="{{week}}">
+			<view class="picker">
+				{{week1?week[week1]:'选择日期'}}
+			</view></picker>
+	</view>
+
+  <view class="cu-form-group">
+		<view class="title">换课节数1</view>
+		<picker bindchange="PickerChange1" value="{{index}}" range="{{classnum}}">
+			<view class="picker">
+				{{index1?classnum[index1]:'选择课程'}}
+			</view>
+		</picker>
+	</view>
+  <view  wx:if="{{typeindex==0}}" class="cu-form-group">
+		<view class="title">换课日期2</view>
+		<picker mode="date" value="{{date2}}" start="2015-09-01" end="2020-09-01" bindchange="DateChange2">
+			<view class="picker">
+				{{date2}}
+			</view>
+		</picker>
+	</view>
+
+<view wx:if="{{typeindex==1}}" class="cu-form-group">
+		<view class="title">换课星期2</view>
+		<picker bindchange="WeekChange2" value="{{index}}" range="{{week}}">
+			<view class="picker">
+				{{week2?week[week2]:'选择日期'}}
+			</view></picker>
+	</view>
+
+  <view class="cu-form-group">
+		<view class="title">换课节数2</view>
+		<picker bindchange="PickerChange2" value="{{index}}" range="{{classnum}}">
+			<view class="picker">
+				{{index2?classnum[index2]:'选择课程'}}
+			</view>
+		</picker>
+	</view>
+  </view>
+      <view class="leave_control">
+<button class="cu-btn disagree">重置</button>
+<button class="cu-btn agree">确认</button>
+    </view>
+  </form>
+</view>

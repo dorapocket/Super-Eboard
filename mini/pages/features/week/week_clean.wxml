@@ -1,0 +1,33 @@
+<!--pages/features/week/week_clean.wxml-->
+<navigator open-type="navigateBack">
+<view class='titleBar'>
+
+<text class="cuIcon-back feature_page_back"></text>
+<text class="feature_page_title">班级值日表</text>
+
+</view>
+</navigator>
+<view style="margin-top:30rpx;">
+
+<view class="features_card" style="margin-bottom:30rpx;">
+  <view class="cu-form-group">
+		<view class="title">选择星期</view>
+		<picker bindchange="WeekChange" value="{{weekIndex}}" range="{{weekList}}">
+			<view class="picker">
+				{{weekIndex?weekList[weekIndex]:'请选择星期'}}
+			</view>
+		</picker>
+	</view>
+</view>
+
+<view class="features_card" wx:if="{{weekgo}}">
+  <form>
+  <view class="cu-form-group" wx:key wx:for="{{cleanList}}">
+		<view class="title">学生{{index+1}}</view>
+		<input placeholder="姓名" bindinput="textchange" id="{{index}}"></input>
+	</view>
+      <button class="cu-btn add" bindtap="addstu"><text class="cuIcon-add lg"></text>   添加学生</button>
+    <button class="cu-btn agree" bindtap="submit"><text class="cuIcon-forwardfill lg"></text>   提交更改</button>
+  </form>
+</view>
+</view>

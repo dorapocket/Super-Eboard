@@ -1,0 +1,32 @@
+<!--pages/features/classtable/classtable.wxml-->
+<navigator open-type="navigateBack">
+<view class='titleBar'>
+
+<text class="cuIcon-back feature_page_back"></text>
+<text class="feature_page_title">课表</text>
+
+</view>
+</navigator>
+
+<navigator url="/pages/features/classtable/class_modify">
+<view class="features_card card_1">
+ <text class="cuIcon-add class_icon"></text>
+ <text class="class_title">课表导入/修改</text>
+</view>
+</navigator>
+<navigator url="/pages/features/classtable/class_change">
+<view class="features_card card_1">
+ <text class="cuIcon-info class_icon"></text>
+ <text class="class_title">临时/永久换课</text>
+</view>
+</navigator>
+<!--
+<view class="features_card card_1">
+ <text class="cuIcon-emoji class_icon"></text>
+ <text class="class_title">代课</text>
+</view>
+<view class="features_card card_1">
+ <text class="cuIcon-roundclose class_icon"></text>
+ <text class="class_title">停课</text>
+</view>
+-->

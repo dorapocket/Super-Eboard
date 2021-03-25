@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "basics": "/pages/basics/home/home",
+    "features":"/pages/features/home/home",
+    "profile": "/pages/profile/home/home"
+  }
+}

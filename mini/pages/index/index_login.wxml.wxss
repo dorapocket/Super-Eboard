@@ -1,0 +1,18 @@
+/* pages/index/index_login.wxml.wxss */
+.logo{
+  margin: 200rpx 0rpx 100rpx 250rpx; 
+}
+.tit1{
+  font-size: 2em;
+  margin-top:100rpx;
+  margin-bottom:400rpx;
+  font-family: "Montserrat";
+}
+.tit2{
+  display:inline;
+  font-size: .9em;
+  margin-left:30rpx;
+  background-color: lightgreen;
+  color: white;
+  padding:20rpx 40rpx 20rpx 40rpx;
+}

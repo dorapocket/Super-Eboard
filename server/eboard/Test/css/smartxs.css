@@ -1,0 +1,189 @@
+.title-wrapper {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-bottom: .5em;
+}
+
+.icon-wrapper {
+    display: block;
+    color: #fff;
+    height: 48px;
+    width: 48px;
+    border-radius: 50%;
+    text-align: center;
+    margin-right: .7rem;
+}
+
+.icon {
+    display: inline-block;
+    margin: 4px;
+}
+
+.title-content {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+
+/* 天气-小 */
+
+.weather-num {
+    font-size: 2.4rem;
+    font-weight: bold;
+}
+
+.weather-num-small {
+    font-size: 1.0rem;
+}
+
+.weather-text {
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+.weather-text-small {
+    font-size: 1.0rem;
+    font-weight: bold;
+}
+
+.weather-wrapper {
+    display: inline-block;
+}
+
+.weather-wrapper-num {
+    display: inline-block;
+}
+
+
+/* 天气-大 */
+
+.weather-num-head {
+    font-size: 5rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+.weather-num-small-head {
+    font-size: 1.5rem;
+}
+
+.weather-text-head {
+    font-size: 1.9rem;
+    font-weight: 500;
+}
+
+.weather-wrapper-head {
+    display: inline-block;
+}
+
+.weather-wrapper-num-head {
+    display: inline-block;
+}
+
+
+/* 课程表 */
+
+.classset-wrapper {
+    margin-left: 10px;
+}
+
+.classset-sm {
+    font-size: 2rem;
+}
+
+.classset-bg {
+    font-size: 5rem;
+    font-weight: 500;
+    line-height: -0.5rem;
+}
+
+
+/* 底部导航 */
+
+.hola-bottomnav-fix {
+    height: 5rem;
+}
+
+ul.bottom-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: fixed;
+    width: 100%;
+    height: 4.4rem;
+    bottom: 0;
+    line-height: 3.5rem;
+    font-size: .7rem;
+    background: #fff;
+    -webkit-box-shadow: 0 0 9px rgba(0, 0, 0, .3);
+    box-shadow: 0 0 9px rgba(0, 0, 0, .3);
+    text-align: center;
+    -webkit-transition: transform .3s ease;
+    transition: transform .3s ease;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+}
+
+ul.bottom-nav li,
+ul.bottom-nav li a.hola-bottomnav-active {
+    color: var(--hola-primary-color);
+}
+
+ul.bottom-nav li,
+ul.bottom-nav li a {
+    color: rgba(0, 0, 0, .5);
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+}
+
+.bottomnav {
+    margin-top: 0.5rem;
+}
+
+/* 应用格子 */
+.app-grid{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+}
+
+.app-grid-icon{
+    display: inline-block;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 25%;
+    flex: 0 0 25%;
+    padding: 1.5rem 0;
+    color: var(--hola-primary-color);
+    text-align: center;
+    -webkit-box-shadow: 0 1px 0 0 #eee;
+    box-shadow: 0 1px 0 0 #eee;
+    text-decoration:none;
+}
+
+.link-wrapper{
+    display: inline-block;
+}
+
+.app-table{
+    width: 400px;
+    display: block;
+}
+
+.app-text{
+    font-weight:bold; 
+    display:block; 
+    font-size:1.3rem; 
+    text-align: center;
+    margin-top: 20px
+}

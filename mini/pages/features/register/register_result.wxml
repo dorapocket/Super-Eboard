@@ -1,0 +1,33 @@
+<!--pages/features/register/register.wxml-->
+<navigator open-type="navigateBack">
+<view class='titleBar'>
+
+<text class="cuIcon-back feature_page_back"></text>
+<text class="feature_page_title">考勤</text>
+
+</view>
+</navigator>
+<view class="features_card card_1">
+  有<text class="bignum_red">5</text>人未到，应到<text class="bignum_green">2</text>人，已请假<text class="bignum_yellow">5</text>人
+</view>
+
+<view class="features_card card_unread_leave">
+  <view class='grid col-1 leave_title'>
+    <text class="leave_name">李国宇</text>
+    <text class="cu-tag bg-yellow stattag">请假</text>
+  </view>
+</view>
+
+<view class="features_card card_unread_leave">
+  <view class='grid col-1 leave_title'>
+    <text class="leave_name">李国宇</text>
+    <text class="cu-tag bg-red stattag">未到</text>
+  </view>
+</view>
+
+<view class="features_card card_unread_leave">
+  <view class='grid col-1 leave_title'>
+    <text class="leave_name">李国宇</text>
+    <text class="cu-tag bg-green stattag">正常</text>
+  </view>
+</view>

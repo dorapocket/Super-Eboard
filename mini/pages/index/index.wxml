@@ -1,0 +1,24 @@
+<!--pages/index/index.wxml-->
+<basics wx:if="{{PageCur=='basics'}}"></basics>
+<features wx:if="{{PageCur=='features'}}"></features>
+<profile wx:if="{{PageCur=='profile'}}"></profile>
+<view class="cu-bar tabbar bg-white shadow foot">
+  <view class="action" bindtap="NavChange" data-cur="basics">
+    <view class='cuIcon-cu-image'>
+      <image src="/images/tabbar/basics{{PageCur=='basics'?'_cur':''}}.png"></image>
+    </view>
+    <view class="{{PageCur=='basics'?'text-green':'text-gray'}}">主页</view>
+  </view>
+  <view class="action" bindtap="NavChange" data-cur="features">
+    <view class='cuIcon-cu-image'>
+      <image src="/images/tabbar/component{{PageCur=='features'?'_cur':''}}.png"></image>
+    </view>
+    <view class="{{PageCur=='features'?'text-green':'text-gray'}}">功能</view>
+  </view>
+  <view class="action" bindtap="NavChange" data-cur="profile">
+    <view class='cuIcon-cu-image'>
+      <image src="/images/tabbar/about{{PageCur=='profile'?'_cur':''}}.png"></image>
+    </view>
+    <view class="{{PageCur=='profile'?'text-green':'text-gray'}}">我的</view>
+  </view>
+</view>

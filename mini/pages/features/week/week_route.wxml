@@ -1,0 +1,22 @@
+<!--pages/features/week/week_route.wxml-->
+<navigator open-type="navigateBack">
+<view class='titleBar'>
+
+<text class="cuIcon-back feature_page_back"></text>
+<text class="feature_page_title">值周</text>
+
+</view>
+</navigator>
+
+<navigator url="/pages/features/week/week_clean">
+<view class="features_card card_1">
+ <text class="cuIcon-add class_icon"></text>
+ <text class="class_title">班级值日表</text>
+</view>
+</navigator>
+<navigator url="/pages/features/week/week">
+<view class="features_card card_1">
+ <text class="cuIcon-info class_icon"></text>
+ <text class="class_title">值周评分</text>
+</view>
+</navigator>

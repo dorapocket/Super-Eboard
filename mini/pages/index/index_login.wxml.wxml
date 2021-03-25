@@ -1,0 +1,9 @@
+<!--pages/index/index_login.wxml.wxml-->
+<view class="logo">
+  <image src="/images/logo.png" mode="aspectFit" style="width:250rpx;height:250rpx;"></image>
+  <view class="tit1">
+    SmartXS
+  </view>
+  <view style="margin-top:150rpx;">
+  <text class="tit2" bindtap="auth">微信验证</text></view>
+</view>

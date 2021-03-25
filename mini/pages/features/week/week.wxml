@@ -1,0 +1,38 @@
+<!--pages/features/week/week.wxml-->
+<navigator open-type="navigateBack">
+<view class='titleBar'>
+
+<text class="cuIcon-back feature_page_back"></text>
+<text class="feature_page_title">值周</text>
+
+</view>
+</navigator>
+<view class="features_card card_1">
+  仅显示最近50条记录
+</view>
+<view class="features_card card_unread_leave" wx:key wx:for="{{scoreList}}">
+  <view class='grid col-1 leave_title'>
+    <text class="leave_name">{{item.time}}</text>
+    <text class="leave_reason_tag">{{item.tag}}</text>
+  </view>
+  <view class="leave_reason_info">
+  <view class="leave_reason_info_title">
+  <text class="leave_reason_info_subtitle">扣分理由：</text>
+  <text class="leave_reason_info_answer">{{item.reason}}</text>
+    </view>
+    <view class="leave_reason_info_title">
+  <text class="leave_reason_info_subtitle">扣分分数：</text>
+  <text class="leave_reason_info_answer score_red">{{item.score}}</text>
+    </view>
+    <view class="leave_reason_info_title">
+  <text class="leave_reason_info_subtitle">值周班级：</text>
+  <text class="leave_reason_info_answer">{{item.className}}</text>
+    </view>
+        <view class="leave_reason_info_title">
+  <text class="leave_reason_info_subtitle">处理人：</text>
+  <text class="leave_reason_info_answer">{{item.studentName}}</text>
+    </view>
+    </view>
+    <view class="leave_control">
+    </view>
+</view>

@@ -1,0 +1,41 @@
+<!--pages/features/leave/leave.wxml-->
+<navigator open-type="navigateBack">
+<view class='titleBar'>
+
+<text class="cuIcon-back feature_page_back"></text>
+<text class="feature_page_title">请假</text>
+
+</view>
+</navigator>
+<view class="features_card card_1">
+  您有<text class="bignum_red">{{undeal}}</text>条请假未处理<!--，今日有<text class="bignum_green">{{today_leave}}</text>人请假-->
+</view>
+
+<view class="features_card card_unread_leave" wx:for="{{undealList}}" wx:key>
+  <view class='grid col-1 leave_title'>
+    <text class="leave_name">{{item.stu_name}}</text>
+    <text class="leave_reason_tag">{{item.tag}}</text>
+  </view>
+  <view class="leave_reason_info">
+  <view class="leave_reason_info_title">
+  <text class="leave_reason_info_subtitle">请假理由：</text>
+  <text class="leave_reason_info_answer">{{item.reason}}</text>
+    </view>
+    <view class="leave_reason_info_title">
+  <text class="leave_reason_info_subtitle">是否通知家长：</text>
+  <text class="leave_reason_info_answer">{{item.iscontact}}</text>
+    </view>
+    <view class="leave_reason_info_title">
+  <text class="leave_reason_info_subtitle">请假开始时间：</text>
+  <text class="leave_reason_info_answer">{{item.begin_time}}</text>
+    </view>
+        <view class="leave_reason_info_title">
+  <text class="leave_reason_info_subtitle">请假结束时间：</text>
+  <text class="leave_reason_info_answer">{{item.end_time}}</text>
+    </view>
+    </view>
+    <view class="leave_control">
+<button class="cu-btn disagree" bindtap="disagree" id="{{item.id}}">拒绝</button>
+<button class="cu-btn agree" bindtap="agree" id="{{item.id}}">同意</button>
+    </view>
+</view>

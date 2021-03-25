@@ -1,0 +1,31 @@
+<!--pages/profile/about/about.wxml-->
+<view class="flex padding justify-center logo">
+  <image src="/images/logo.png" mode="aspectFit" style="width:250rpx;height:250rpx;"></image>
+
+</view>
+<view class="flex padding justify-center">
+   <view class="tit1">
+    SmartXS
+  </view>
+</view>
+<view class="flex padding justify-center">
+   <view class="txtstyle">小程序作者：Dorapocket</view>
+</view>
+<view class="flex padding justify-center">
+   <view class="txtstyle">班牌前端作者：ztjryg4</view>
+</view>
+<view class="flex padding justify-center">
+   <view class="txtstyle">服务端作者：Dorapocket</view>
+</view>
+<view class="flex padding justify-center">
+   <view class="txtstyle">授权给：Ningbo Xiaoshi High School</view>
+</view>
+<view class="flex padding justify-center" style="margin-top:200rpx;">
+   <view class="txtstyle">Copyright 2019 SmatrXS</view>
+</view>
+<view class="flex justify-center">
+   <view class="txtstyle">All right reserved</view>
+</view>
+
+
+

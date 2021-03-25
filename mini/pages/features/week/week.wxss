@@ -1,0 +1,109 @@
+/* pages/features/week/week.wxss */
+.score_red{
+  font-family: 'Montserrat';
+  font-size: 1.3em;
+  font-weight: 600;
+  color: red;
+  opacity: .8;
+}
+.leave_control{
+  margin-top: 40rpx;
+  padding-top:10rpx;
+}
+.disagree{
+  background-color: #f44!important;
+  border-radius: 0%!important;
+  color: white;
+  font-size: 0.8rem;
+  font-weight: 600;
+  width: 46vw;
+  height: 80rpx;
+}
+.agree{
+  background-color: #07c160!important;
+  border-radius: 0%!important;
+  color: white;
+  font-size: 0.8rem;
+  font-weight: 600;
+  width: 92vw;
+  height: 80rpx;
+}
+.leave_reason_info_answer{
+    font-family: 'Montserrat';
+}
+.leave_reason_info{
+  margin-left: 40rpx;
+}
+.leave_reason_info_title{
+  margin-top:15rpx;
+  margin-bottom: 15rpx;
+}
+.leave_reason_info_subtitle{
+    font-weight: 600;
+  font-size: 0.7rem;
+  opacity: .8;
+
+}
+.leave_title{
+  padding: 40rpx 0rpx 20rpx 40rpx;
+}
+.leave_name{
+  font-family: 'Montserrat';
+  display: inline-block;
+  font-weight: 700;
+  font-size: 1rem;
+  margin-right:30rpx;
+  opacity: .8;
+}
+.leave_reason_tag{
+  display: inline-block;
+  background-color: #3498db;
+  padding: 10rpx 15rpx 10rpx 15rpx;
+  color: white;
+  font-weight: 600;
+
+}
+.card_unread_leave{
+  margin-bottom: 40rpx;
+}
+.card_1{
+  margin-top:  40rpx;
+  margin-bottom:  30rpx;
+  padding:50rpx 0rpx 50rpx 60rpx;
+  font-family: 'Montserrat';
+  font-size: 0.8rem;
+}
+.bignum_red{
+  color: #f44;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+.bignum_green{
+  color: #07c160;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+.titleBar{
+  background-color: #3498db;
+  height: 150rpx;
+}
+.feature_page_back{
+  display: inline-block;
+  margin: 75rpx 10rpx 0rpx 40rpx;
+  color: white;
+  font-size: 1rem;
+  font-weight: 700;
+}
+.feature_page_title{
+  display: inline-block;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+.features_card{
+  box-shadow:2rpx 2rpx 20rpx rgba(161, 161, 161, 0.7);
+  margin-left: 4vw;
+  margin-right: 4vw;
+  width: 92vw;
+  background-color: white;
+}

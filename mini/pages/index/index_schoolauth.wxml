@@ -1,0 +1,3 @@
+<!--pages/index/index_schoolauth.wxml-->
+<text style="margin-top:500rpx;display:block;">这本来应该是学校验证页面，可是  略略略~我还没做好！所以你看不见~~</text>
+<text style="margin-top:100rpx;display:block;">OPENID:{{openid}}</text>

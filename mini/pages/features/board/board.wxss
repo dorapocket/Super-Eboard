@@ -1,0 +1,45 @@
+/* pages/features/board/board.wxss */
+.disagree{
+  background-color: #f44!important;
+  border-radius: 0%!important;
+  color: white;
+  font-size: 0.8rem;
+  font-weight: 600;
+  width: 46vw;
+  height: 80rpx;
+}
+.agree{
+  background-color: #07c160!important;
+  border-radius: 0%!important;
+  color: white;
+  font-size: 0.8rem;
+  font-weight: 600;
+  width: 92vw;
+  height: 80rpx;
+}
+
+.titleBar{
+  background-color: #3498db;
+  height: 150rpx;
+}
+.feature_page_back{
+  display: inline-block;
+  margin: 75rpx 10rpx 0rpx 40rpx;
+  color: white;
+  font-size: 1rem;
+  font-weight: 700;
+}
+.feature_page_title{
+  display: inline-block;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+.features_card{
+  box-shadow:2px 2px 20px rgba(161, 161, 161, 0.7);
+  margin-top:50rpx;
+  margin-left: 4vw;
+  margin-right: 4vw;
+  width: 92vw;
+  background-color: white;
+}

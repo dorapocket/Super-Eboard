@@ -1,0 +1,23 @@
+<!--pages/features/register/register_home.wxml-->
+<navigator open-type="navigateBack">
+<view class='titleBar'>
+
+<text class="cuIcon-back feature_page_back"></text>
+<text class="feature_page_title">考勤</text>
+
+</view>
+</navigator>
+
+<navigator url="/pages/features/register/register_new">
+<view class="features_card card_1">
+ <text class="cuIcon-add class_icon"></text>
+ <text class="class_title">发起考勤</text>
+</view>
+</navigator>
+<navigator url="/pages/features/register/register_result">
+<view class="features_card card_1">
+ <text class="cuIcon-info class_icon"></text>
+ <text class="class_title">考勤结果</text>
+</view>
+</navigator>
+

@@ -1,0 +1,30 @@
+<view class="relative_container">
+  <view class="herobg">
+    <view class="title_container">
+      <view class="pagetitle">
+        功能
+      </view>
+      <view class="pagetitle">
+        Features
+      </view>
+    </view>
+  </view>
+  <view class="features_card_absolute">
+    <view class="grid col-1 card-title">
+      <view class='titleicon_bg' style="  background-color: rgb(255, 196, 0);">
+        <text class="cuIcon-cascades titleicon"></text>
+      </view>
+      <text class="weather-title" style="  color: rgb(255, 196, 0);">班级</text>
+    </view>
+    <view class="grid col-1 card-body">
+      <view class="cu-list grid col-3">
+  <view class="cu-item" wx:for="{{features}}" wx:key wx:if="{{(item.isShow)?((item.classAdmin&&!isClassAdmin)?false:true):false}}">
+        <navigator url="{{item.feature_route}}" hover-class="none">
+    <text class="cuIcon-{{item.feature_icon}} f_icon"></text>
+    <text class="f_name">{{item.feature_name}}</text>
+    </navigator>
+  </view>
+</view>
+    </view>
+  </view>
+</view>

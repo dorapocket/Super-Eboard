@@ -1,0 +1,166 @@
+/* pages/basics/home/home.wxss */
+.unread{
+  margin-left:3px;
+  margin-top:20rpx;
+  margin-bottom:10rpx;
+}
+.unread_type{
+  margin-top:10rpx;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: rgb(106, 27, 154);
+}
+.unread_msg{
+margin-top: 10rpx;
+font-size: 0.7rem;
+font-weight: 500;
+margin-left:20rpx;
+overflow: hidden;
+text-overflow:ellipsis;
+white-space: nowrap;
+max-width: 75vw;
+}
+.card_card_inf{
+  display: block;
+  padding-top:20rpx;
+  color:rgb(21, 101, 192);
+  font-size: 1.5rem;
+  font-weight: 700;
+  opacity: .8;
+  font-family: 'Montserrat';
+}
+.temp_card_inf_foot{
+  color:rgb(0, 0, 0);
+  font-size: 0.6rem;
+  font-weight: 400;
+  opacity: .5;
+  font-family: 'Montserrat';
+}
+.temp_card_inf{
+  display: block;
+  padding-top:10rpx;
+  color:rgb(216, 67, 21);
+  font-size: 1.5rem;
+  font-weight: 700;
+  opacity: .8;
+  font-family: 'Montserrat';
+}
+.inf_card{
+  box-shadow:2px 2px 20px rgba(161, 161, 161, 0.7);
+  margin-left: 4vw;
+  margin-right: 4vw;
+
+  width: 92vw;
+  z-index: 2;
+  background-color: white;
+}
+.card-body{
+  display:block;
+  margin-left:50rpx;
+  margin-bottom: 50rpx;
+}
+.card-title{
+padding: 40rpx 0rpx 0rpx 40rpx;
+}
+.weather-title{
+  height: 20rpx;
+  display: block;
+  margin: 10rpx 0rpx 0rpx 20rpx;
+  font-size: 30rpx;
+  font-weight: 700;
+}
+.weather-context{
+  display: inline-block;
+}
+.titleicon{
+  color: white;
+  font-size: 50rpx;
+  display: block;
+  margin: 8rpx 0rpx 0rpx 10rpx;
+}
+.titleicon_bg{
+  width: 70rpx!important;
+  height: 70rpx;
+  border-radius: 50%;
+}
+.absolute_container_1{
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  z-index: 1
+}
+.relative_conainer{
+  position: relative;
+  height: 660rpx;
+}
+.weather_inf_card{
+  box-shadow:2px 2px 20px rgba(161, 161, 161, 0.7);
+  margin-left: 4vw;
+  margin-right: 4vw;
+  top:400rpx;
+  left: 0;
+  position: absolute;
+  width: 92vw;
+  z-index: 2;
+  margin-top: -100rpx;
+  
+  background-color: white;
+}
+.temperature{
+    margin-left: 80rpx;
+  color: white;
+  font-size: 1.2em;
+  font-weight: 700;
+  opacity: .8;
+  font-family: 'Montserrat';
+}
+.weather-icon{
+  margin-left: 100rpx;
+  margin-top: 40rpx;
+  height: 120rpx;
+  width: 120rpx;
+  opacity: .8;
+}
+.week{
+  margin-top:70rpx;
+  margin-left:50rpx;
+}
+.homebg{
+  background-color: #3498db;
+}
+.week_1{
+  margin-left:10rpx;
+  color: white;
+  font-size: 2.0em;
+  font-weight: 700;
+  opacity: .8;
+  font-family: 'Montserrat';
+}
+.week_2{
+  margin-left:20rpx;
+  font-size: 1.0em;
+  font-weight: 700;
+  opacity: .8;
+  font-family: 'Montserrat';
+}
+.week_3{
+  display: block;
+  padding-top:20rpx;
+  margin-left:60rpx;
+  color: white;
+  font-size: 1.0em;
+  font-weight: 400;
+  opacity: .8;
+  font-family: 'Montserrat';
+}
+.basicinf{
+  z-index: 1;
+  color: white;
+  height:400rpx;
+  margin: 0 auto;
+}
+
+.scrollPage {
+  height: 100vh;
+}

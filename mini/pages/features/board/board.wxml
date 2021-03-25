@@ -1,0 +1,60 @@
+<!--pages/features/board/board.wxml-->
+<!--pages/features/leave/leave.wxml-->
+<navigator open-type="navigateBack">
+<view class='titleBar'>
+
+<text class="cuIcon-back feature_page_back"></text>
+<text class="feature_page_title">通知</text>
+
+</view>
+</navigator>
+<form>
+<view class="features_card">
+	<view class="cu-form-group">
+  <view class="title">发送目标</view>
+		<picker mode="multiSelector" bindchange="MultiChange" bindcolumnchange="MultiColumnChange" value="{{multiIndex}}"
+		 range="{{multiArray}}" name="sendto">
+			<view class="picker">
+				{{multiArray[0][multiIndex[0]]}}，{{multiArray[1][multiIndex[1]]}}，{{multiArray[2][multiIndex[2]]}}
+			</view>
+		</picker>
+  </view>
+  <view class="cu-form-group margin-top">
+		<view class="title">紧急程度</view>
+		<picker bindchange="PickerChange" value="{{index}}" range="{{picker}}" name="emergency">
+			<view class="picker">
+				{{index?picker[index]:'请选择紧急程度'}}
+			</view>
+		</picker>
+	</view>
+    	<view class="cu-form-group margin-top">
+		<view class="title">主题</view>
+		<input placeholder="通知主题" name="title" bindinput="titleinput"></input>
+	</view>
+  <view class="cu-form-group align-start">
+		<textarea maxlength="-1" disabled="{{modalName!=null}}" bindinput="textareaBInput" placeholder="请输入内容" name="message"></textarea>
+	</view>
+  <view class="cu-bar bg-white margin-top">
+		<view class="action">
+			附加图片
+		</view>
+		<view class="action">
+			{{imgList.length}}/4
+		</view>
+	</view>
+  	<view class="cu-form-group">
+		<view class="grid col-4 grid-square flex-sub">
+			<view class="bg-img" wx:for="{{imgList}}" wx:key="{{index}}" bindtap="ViewImage" data-url="{{imgList[index]}}">
+				<image src='{{imgList[index]}}' mode='aspectFill'></image>
+				<view class="cu-tag bg-red" catchtap="DelImg" data-index="{{index}}">
+					<text class="cuIcon-close"></text>
+				</view>
+			</view>
+			<view class="solids" bindtap="ChooseImage" wx:if="{{imgList.length<4}}">
+				<text class="cuIcon-cameraadd"></text>
+			</view>
+		</view>
+	</view>
+  <button class="cu-btn agree" bindtap="submit"><text class="cuIcon-forwardfill lg"></text>发送</button>
+</view>
+</form>

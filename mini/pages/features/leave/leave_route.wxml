@@ -1,0 +1,22 @@
+<!--pages/features/leave/leave_route.wxml-->
+<navigator open-type="navigateBack">
+<view class='titleBar'>
+
+<text class="cuIcon-back feature_page_back"></text>
+<text class="feature_page_title">请假</text>
+
+</view>
+</navigator>
+
+<navigator url="/pages/features/leave/leave">
+<view class="features_card card_1">
+ <text class="cuIcon-check class_icon"></text>
+ <text class="class_title">请假审批</text>
+</view>
+</navigator>
+<navigator url="/pages/features/leave/leave_history">
+<view class="features_card card_1">
+ <text class="cuIcon-time class_icon"></text>
+ <text class="class_title">审核历史</text>
+</view>
+</navigator>

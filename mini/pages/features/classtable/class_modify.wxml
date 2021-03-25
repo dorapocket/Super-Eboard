@@ -1,0 +1,36 @@
+<!--pages/features/classtable/class_modify.wxml.wxml-->
+<navigator open-type="navigateBack">
+<view class='titleBar'>
+
+<text class="cuIcon-back feature_page_back"></text>
+<text class="feature_page_title">课表修改</text>
+
+</view>
+</navigator>
+<view style="margin-top:30rpx;">
+
+<view class="features_card" style="margin-bottom:30rpx;">
+  <view class="cu-form-group">
+		<view class="title">选择星期</view>
+		<picker bindchange="WeekChange" value="{{weekIndex}}" range="{{weekList}}">
+			<view class="picker">
+				{{weekIndex?weekList[weekIndex]:'请选择星期'}}
+			</view>
+		</picker>
+	</view>
+</view>
+
+<view class="features_card" wx:if="{{weekgo}}">
+  <form>
+  <view wx:key wx:for="{{classList}}" class="cu-form-group">
+		<view class="title">{{item.time}}</view>
+		<picker id="{{index}}" bindchange="PickerChange" value="{{item.class}}" range="{{picker}}">
+			<view class="picker">
+				{{item.class?item.class:'请选择'}}
+			</view>
+		</picker>
+	</view>
+    <button class="cu-btn agree" bindtap="submit"><text class="cuIcon-forwardfill lg"></text>发送</button>
+  </form>
+</view>
+</view>
