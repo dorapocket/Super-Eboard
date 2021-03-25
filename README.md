@@ -7,13 +7,16 @@
 - 目前支持特性：班级管理、通知发送、请假、人脸识别/校园卡登录、课表、天气、时间、签到等。
 
 **部分源代码涉及安全，保留，有需要请提Issue**
+
 **欢迎提出feature请求！**
+
 ## Screenshots
 ![overview](../main/screenshots/overview.png)
 ![demo1](../main/screenshots/demo1.png)
 ![demo2](../main/screenshots/demo2.png)
 ![demo3](../main/screenshots/demo3.png)
 ![demo4](../main/screenshots/demo4.png)
+
 ## Setup
 ### Project setup
 ```
